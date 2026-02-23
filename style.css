@@ -1,14 +1,14 @@
 body {
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-color: #0f0e0e;
-background-color: #cd1010;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: black;
+background-color: rgb(241, 239, 239);
 margin: 0;
 padding: 0;
 line-height: 1.6;
 }
 
 header {
-background-color: #2ba045;
+background-color: #06812d;
 color: white;
 padding: 20px;
 text-align: center;
@@ -30,7 +30,6 @@ margin: 0 10px;
 
 nav a:hover {
 text-decoration: underline;
-text-shadow: #372c2c;
 }
 
 main {
@@ -41,7 +40,7 @@ background-color: rgb(255, 255, 255);
 }
 
 main img {
-max-width: 50%;
+max-width: 100%;
 height: auto;
 display: block;
 margin: 20px 0;
@@ -51,7 +50,7 @@ footer {
 background-color: #333;
 color: white;
 text-align: center;
-padding: 10Spx;
+padding: 2px;
 position: fixed;
 bottom: 0;
 width: 100%;
