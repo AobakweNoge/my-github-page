@@ -78,8 +78,8 @@ font-weight: bold;
     
 }
 
-/*Hero section*/
-.hero-container {
+/*Content Section*/
+.content-container {
    position: relative;
    z-index: 2;
 }
@@ -104,7 +104,7 @@ font-weight: bold;
     transition: 0.5s;
 }
 
-.hero-text h1 {
+.content-text h1 {
     font-size: 3rem;
     margin-bottom: 20px;
     text-decoration: wavy;
@@ -120,7 +120,7 @@ font-weight: bold;
     display: grid;
 }
 
-.hero {
+.content {
     padding: 100px 0;
     color:  white;
 position: relative;
@@ -128,12 +128,12 @@ overflow: hidden;
 margin-top: 0;
 }   
 
-.hero-text {
+.content-text {
     max-width: 550px;
     backdrop-filter: blur(6px);
 }
 
-.hero-text p {
+.content-text p {
     margin-bottom: 30px;
     color:  white;
     font-size: 1.2rem;
@@ -143,12 +143,12 @@ margin-top: 0;
     
 }
 
-.hero-image {
+.content-image {
    text-align: right;
    flex: 1;
 }
 
-.hero::before {
+.content::before {
     content: "";
     position: absolute;
     inset: -20px;
@@ -157,7 +157,7 @@ margin-top: 0;
     z-index: 0;
 }
 
-.hero::after {
+.content::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -183,20 +183,20 @@ margin-top: 0;
     color: white;
 }
 
-.hero-buttons {
+.content-buttons {
     display: flex;
     gap: 15px;
 }
 @media (max-width: 768px) {
-    .hero {
+    .content {
         padding: 80px 20px;
         text-align: center;
     
     }
-.hero-image {
+.content-image {
     justify-content: center;
 }
-.hero-buttons {
+.content-buttons {
     justify-content: center;
 }
 }
@@ -237,6 +237,7 @@ color: whitesmoke;
     font-size: 1.1rem;
     line-height: 1.7;
     opacity: 0.9;
+    text-align: justify;
 }
 
 /*Footer*/
@@ -273,12 +274,10 @@ color: whitesmoke;
   font-size: 18px;
 }
 
-/* Hover */
 .social:hover {
   transform: translateY(-5px);
 }
 
-/* Brand Colors */
 .facebook:hover {
   background: #1877f2;
 }
@@ -314,7 +313,7 @@ color: whitesmoke;
   display: block;
 }
 
-.about-hero {
+.about-content {
   padding: 0px 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 500;
@@ -331,7 +330,7 @@ color: whitesmoke;
   font-weight: 800;
 }
 
-.about-hero h1 {
+.about-content h1 {
     margin-bottom: 20px;
   font-size: 2rem;
   font-weight: 800;
