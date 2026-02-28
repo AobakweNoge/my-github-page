@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
     <!--Bootstrap CSS-->
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <!--Custom CSS-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">"
 </head>
 <body>
-    <header>
-        <h1>About me</h1>
-        <nav>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+  <!--Navbar-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
 <div class="container">
-<a class="navbar-brand" href="index.html">My Website</a>
+<a class="navbar-brand" href="index.html">Noge Holdings</a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -28,6 +31,9 @@
             <a class="nav-link"  href="about.html">About</a>
             </li>
                <li class="nav-item">
+            <a class="nav-link" href="Services.html">Services</a>
+        </li>
+            <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
             </li>
 </ul>
@@ -35,14 +41,83 @@
 </div>
         </nav>
     </header>
-      <main class="container my my-5">
-        <h2>About me</h2>
-        <p>Hi I'm a beginner web developer learning how to use Github pages</p>
-        <p>This is my first multi-page website, and I'm excited to share it with you!</p>
+    <main>
+    
+      <!--About Us-->
+    <section class="about-hero">
+        <div class="container aboutUs-container">
+            <img src="images/chat.jpg" alt="About image" class="about-img">
+            <div class="about-text">
+        <h1>About Noge Holdings</h1>
+        <p>Noge Holdings is a non-governmental organisation formed in 2002 in Botswana that promotes digital literacy, inclusiveness and technology for the benefit of society. We create a space where IT tools become understandable and digital solutions are accessible to everyone who wants to make changes.<br>
+We work in growth areas we support economic, social, educational and civic initiatives, help develop services, analytical dashboards, educational platforms, and advise and train teams that lack technical support.<br>
+We believe that technology should serve people. Thats why we help organisations, communities and businesses implement ideas that make the digital environment open, friendly and human.</p>
+        </div>
+        </div>
+    </section>
+
+
+<!--Who we are-->
+<section class="about-story">
+    <div class="container about-container">
+<div class="story-text">
+        <h1>Who we are</h1>
+        <P>Noge Holdings is also made up of people who believe in the power of technology, knowledge, and mutual support. We are united not by position or status, but by the desire to make the digital world more open, understandable, and useful for everyone.<br>
+             Our community consists of developers, designers, analysts, consultants, educators, public sector representatives, and initiative volunteers from all over the world. Some share knowledge, some help implement social projects, and some simply inspire others to change.<br>
+We believe that transformation starts with simple things: honest conversation, practical experience, and a desire to give more than you take. That is why we are building not just an organisation – we are creating a community that supports, teaches and changes.</P>
+</div>
+    </div>
+
+    <!--Values-->
+    <section class="core-values">
+  <div class="container">
+    <h2>Our Core Values</h2>
+
+    <div class="values-grid">
+      <div class="value">
+        <i class="fas fa-handshake"></i>
+        <h4>Integrity</h4>
+      </div>
+
+      <div class="value">
+        <i class="fas fa-lightbulb"></i>
+        <h4>Innovation</h4>
+      </div>
+
+      <div class="value">
+        <i class="fas fa-users"></i>
+        <h4>Teamwork</h4>
+      </div>
+
+      <div class="value">
+        <i class="fas fa-chart-line"></i>
+        <h4>Growth</h4>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
-    <footer>
-        <p>&copy;2026 Aobakwe Noge</p>
-    </footer>
+     
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container footer-container">
+        <p>&copy;Noge Holdings. All Rights Reserved.</p>
+         <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" class="social facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://x.com" target="_blank" class="social twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="social instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="social linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </div>
+</footer>
     <!-- Bootstrap JS and dependencies -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>

@@ -1,59 +1,50 @@
+/*Home Page*/
 body {
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color: black;
-background-color: rgb(255, 255, 255);
+color:  #1e293b;
 margin: 0;
 padding: 0;
 line-height: 1.6;
+box-sizing: border-box;
+background-color: rgba(181, 177, 177, 0.73);
+display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-background-color: #06812d;
-color: white;
-padding: 20px;
+background-color: #0f1f3d;
+padding: 0px;
 text-align: center;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin: 0;
+display:block ;
+ position: fixed;    
+    top: 0;            
+    left: 0;            
+    width: 100%;        
+    z-index: 999;      
 }
 
 header h1 {
 margin: 0;
+text-align: center;
+font-weight: 900;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav a {
-color: white;
-font-style: oblique;
-text-decoration: beige;
+font-style: italic;
 text-align: center;
 margin: 0 10px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 500;
+transition: 0.3s;
+font-size: medium;
 }
 
 nav a:hover {
 text-decoration: underline;
-}
-
-main {
-padding: 20px;
-max-width: 800px;
-margin: 0 auto;
-background-color: rgb(255, 255, 255);
-}
-
-main img {
-max-width: 100%;
-height: auto;
-display: block;
-margin: 20px 0;
-}
-
-footer {
-background-color: #333;
-color: white;
-text-align: center;
-padding: 2px;
-position: fixed;
-bottom: 0;
-width: 100%;
 }
 
 p {
@@ -62,21 +53,428 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
-color: #4CAF50;
-text-decoration: oklab(from color l a b);
+color: #ffffff;
+text-decoration: none;
 }
 
 a:hover {
 text-decoration: underline;
 }
 
-img {
-border: 5px solid #4CAF50;
-border-radius: 10px;
-border-style: double;
+main {
+    flex: 1;
 }
 
 main a[href^="mailto:"] {
-color: #ff5722;
+color: #76260ed6;
 font-weight: bold;
+}
+
+.navbar {
+    background: #0f1f3d;
+    padding: 10px 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    font-weight: 900;
+    
+}
+
+/*Hero section*/
+.hero-container {
+   position: relative;
+   z-index: 2;
+}
+
+.btn-primary{
+    background: #4f46e5;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+    font-style: inherit;
+    
+}
+
+.btn-link{
+    background: #264388;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-decoration: wavy;
+    color: white;
+    font-weight: 900;
+}
+
+.card-body { 
+    background: #1e293b;
+    text-align: justify;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    display: grid;
+}
+
+.hero {
+    padding: 120px 0;
+    color:  white;
+position: relative;
+overflow: hidden;
+margin-top: 60px;
+}   
+
+.hero-text {
+    max-width: 550px;
+    backdrop-filter: blur(6px);
+}
+
+.hero-text p {
+    margin-bottom: 30px;
+    color:  white;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+    font-weight: 600;
+    
+}
+
+.hero-image {
+   text-align: right;
+   flex: 1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: -20px;
+    background: url(images/Laptop.jpg) no-repeat center/cover;
+    animation: smoothfloat 15s ease-in-out infinite;
+    z-index: 0;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 31, 61,0.75);
+    z-index: 1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.container h2{
+    color: #0f172a;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+.badge {
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 20px;
+        text-align: center;
+    
+    }
+.hero-image {
+    justify-content: center;
+}
+.hero-buttons {
+    justify-content: center;
+}
+}
+
+@keyframes smoothfloat {
+    0% {transform: translateY(0PX) scale(1);}
+    50%  {transform: translateY(-15px) scale(1.02);}
+    100% {transform: translateY(0px) scale(1);}
+}
+
+/*Missions*/
+.mission {
+    background:#1e293b ;
+    padding: 80px 0;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.mission-box {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.mission h2 {
+font-size: 2rem;
+margin-bottom: 20px;
+font-weight: 900;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mission p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/*Footer*/
+.footer {
+  background: #0f1f3d;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 18px;
+}
+
+/* Hover */
+.social:hover {
+  transform: translateY(-5px);
+}
+
+/* Brand Colors */
+.facebook:hover {
+  background: #1877f2;
+}
+
+.twitter:hover {
+  background: #1da1f2;
+}
+
+.instagram:hover {
+  background: #e4405f;
+}
+
+.linkedin:hover {
+  background: #0077b5;
+}
+
+/*About Page*/
+.aboutUs-container {
+  padding: 30px 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.about-img {
+  width: 50vw;
+  max-width: 900px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-hero {
+  padding: 0px 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+}
+.about-story {
+  padding: 0px 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+}
+
+.about-story h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.about-hero h1 {
+    margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 800;
+}
+ 
+.AboutUs-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-text {
+  flex: 1;
+  padding: 0px 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+  max-width: 800px;
+}
+
+.about-text h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.about-text p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+
+
+/* VALUES */
+.core-values {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.value {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.value:hover {
+  transform: translateY(-8px);
+}
+
+.value i {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #0f1f3d;
+}
+
+/*Services*/
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.service-img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.service-text {
+  flex: 1;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.service-text h3 {
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width:768px){
+  .service-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .service-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-weight: 900;
+  padding: 50px;
+}
+/*Contact*/
+.contact-section {
+  padding: 80px 0;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  border: none;
+  background: #0f1f3d;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #00bcd4;
 }
