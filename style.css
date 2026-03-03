@@ -448,7 +448,7 @@ max-width: 900px;
 h2 {
   text-align: center;
   font-weight: 900;
-  padding: 50px;
+  padding: 80px;
 }
 /*Contact*/
 .contact-section {
@@ -493,4 +493,201 @@ h2 {
 
 .contact-form button:hover {
   background: #00bcd4;
+}
+
+/*request form*/
+.request-section {
+  background-color: rgba(181, 177, 177, 0.73);
+  padding: 90px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 700px;
+}
+
+.request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+.request-form input,
+.request-form textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  background: #ffffff;
+  font-size: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.request-form input:focus,
+.request-form textarea:focus {
+  box-shadow: 0 0 0 2px #1e3a8a;
+}
+
+.form-btn {
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  background: #1e3a8a;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-btn:hover {
+  background: #162c6b;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+.page-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  animation: fadeUp .5s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/*Table*/
+.table-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.8rem;
+  padding: 120px;
+}
+
+.table-header h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+  color: #0f1f3d;
+}
+
+.table-wrap {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 820px;
+}
+
+thead tr {
+  background: #1a1f2e;
+  border-bottom: 2px solid var(--accent);
+}
+
+thead th {
+  padding: 1rem 1.1rem;
+  text-align: left;
+  font-family: 'Syne', sans-serif;
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  white-space: nowrap;
+  border-right: 1px solid var(--border-cell);
+  color: white;
+}
+
+thead th:first-child { padding-left: 1.5rem; }
+thead th:last-child  { padding-right: 1.5rem; border-right: none; }
+
+
+tbody tr {
+  border-bottom: 1px solid var(--border-cell);
+  transition: background .18s;
+}
+
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: var(--surface-2); }
+
+tbody td {
+  padding: .9rem 1.1rem;
+  font-size: .85rem;
+  color: var(--ink);
+  white-space: nowrap;
+  border-right: 1px solid var(--border-cell);
+}
+
+.row-num {
+  font-family: 'Syne', sans-serif;
+  font-size: .72rem;
+  color: var(--ink-muted);
+  font-weight: 600;
+}
+
+.order-id {
+  font-family: 'Syne', sans-serif;
+  font-size: .78rem;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: .04em;
+}
+
+.total {
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: .88rem;
+  color: var(--ink);
+}
+
+.tag-software  { background: rgba(79,142,247,.15); color: #7eb0ff; }
+.tag-cloud     { background: rgba(52,201,126,.12); color: #1a8948; }
+.tag-security  { background: rgba(224,84,84,.12);  color: #f07575; }
+
+.badge {
+  display: inline-block;
+  padding: .28rem .8rem;
+  border-radius: 20px;
+  font-size: .7rem;
+  font-weight: 500;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.badge-paid      { background: rgba(52,201,126,.15); color: var(--green); border: 1px solid rgba(52,201,126,.3); }
+.badge-pending   { background: rgba(245,166,35,.12); color: var(--amber); border: 1px solid rgba(245,166,35,.3); }
+.badge-cancelled { background: rgba(224,84,84,.1);   color: var(--red);   border: 1px solid rgba(224,84,84,.25); }
+
+@media (max-width: 600px) {
+  .table-header { flex-direction: column; align-items: flex-start; }
+  .summary-pills { width: 100%; }
+  .pill { flex: 1; text-align: left; }
 }
